@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <span style="color:blue"</span>
     <style>
         .live-chat {
             border: 1px solid #ccc;
@@ -15,59 +14,296 @@
             margin: 40px auto;
             background: #f9f9f9;
         }
+
         .live-chat input {
             width: 100%;
             padding: 8px;
             margin-top: 10px;
+            box-sizing: border-box;
         }
+
         .live-chat button {
             margin-top: 10px;
             padding: 8px 12px;
         }
+
+        .extra-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .info-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .steps-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .step-card {
+            flex: 1;
+            min-width: 220px;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: white;
+            text-align: center;
+        }
+
+        .step-number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 15px;
+            background: #eeeeee;
+            margin-top: 10px;
+        }
+
+        .faq-answer {
+            padding: 15px;
+            background: white;
+        }
+
+        .emergency-box {
+            border: 2px solid #cc0000;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            background: #fff5f5;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            background: #eeeeee;
+            color: #0000ee;
+        }
+
+        .resource-list {
+            padding-left: 20px;
+        }
+
+        .resource-list li {
+            margin-bottom: 12px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background: white;
+            border-radius: 5px;
+        }
+
+        /* SERVICE LINKS */
+
+        .service-links {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .service-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-links li {
+            margin: 12px 0;
+        }
+
+        .service-links a {
+            color: blue;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .service-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* SERVICE INFORMATION */
+
+        .service-information {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .service-information h2 {
+            margin-bottom: 15px;
+        }
+
+        .service-information p {
+            line-height: 1.7;
+        }
+
+        /* SERVICE CARDS */
+
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .service-cards .info-card {
+            margin: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .service-cards .info-card h2 {
+            margin-top: 0;
+        }
+
+        .service-cards .contact-button {
+            margin-top: 10px;
+        }
     </style>
 </head>
+
 <body>
 
 <header>
+
     <h1>MapYourMind</h1>
-	<h2>Support when life feels overwhelming</h2>
-	<h2><a href="#contact-us" style="color:blue;">Book an Appointment</a></h2>
-	<h2><a href="#news" style="color:blue;">Learn More</a></h2>
+
+    <h2>Support when life feels overwhelming</h2>
+
+    <h2>
+        <a href="#contact-us" style="color:blue;">
+            Book an Appointment
+        </a>
+    </h2>
+
+    <h2>
+        <a href="#news" style="color:blue;">
+            Learn More
+        </a>
+    </h2>
+
 </header>
 
-<span style="color:green"></span>
+
 <section class="logo-section">
-    <img src="images/Map Your Mind.png" alt="Map Your Mind" style="max-width:100px; display:block; position:absolute; top:10px; left:10px;">
-	<img src="images/Mum pic.png" alt="Mum Pic" style="max-width:90px; display:block; position:absolute; top:50px; right:20px;">
+
+    <img
+        src="images/Map Your Mind.png"
+        alt="Map Your Mind"
+        style="max-width:100px; display:block; position:absolute; top:10px; left:10px;"
+    >
+
+    <img
+        src="images/Mum pic.png"
+        alt="Mum Pic"
+        style="max-width:90px; display:block; position:absolute; top:50px; right:20px;"
+    >
+
 </section>
 
+
+<!-- NAVIGATION -->
+
 <nav>
+
     <ul>
-	    <li><a href="
-        <li><a href="#">Home</a></li>
-        <li><a href="#stress">Stress</a></li>
-        <li><a href="#anxiety">Anxiety</a></li>
-        <li><a href="#relationships">Relationships</a></li>
-		<li><a href="#self-awareness">Self-awareness</a><li>
-		<li><a href="#addiction">Addiction</a><li>
-		<li><a href="#bereavement">Bereavement</a><li>
-		<li><a href="#couples therapy">Couples Therapy</a><li>
-		<li><a href="#work-related stress">Work-related Stress</a><li>
-		<li><a href="#neurodiversity">Neurodiversity</a><li>
-		<li><a href="#trauma">Trauma</a><li>
+
+        <li>
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#services">Services</a>
+        </li>
+
+        <li>
+            <a href="#stress">Stress</a>
+        </li>
+
+        <li>
+            <a href="#anxiety">Anxiety</a>
+        </li>
+
+        <li>
+            <a href="#relationships">Relationships</a>
+        </li>
+
+        <li>
+            <a href="#self-awareness">Self-awareness</a>
+        </li>
+
+        <li>
+            <a href="#addiction">Addiction</a>
+        </li>
+
+        <li>
+            <a href="#bereavement">Bereavement</a>
+        </li>
+
+        <li>
+            <a href="#couples-therapy">Couples Therapy</a>
+        </li>
+
+        <li>
+            <a href="#work-related-stress">Work-related Stress</a>
+        </li>
+
+        <li>
+            <a href="#neurodiversity">Neurodiversity</a>
+        </li>
+
+        <li>
+            <a href="#trauma">Trauma</a>
+        </li>
+
     </ul>
+
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-    <h2>Information about me</h2>
-    <p>My name is Vandna Thapar and I am a BACP Accredited mental-health counsellor. Sessions are anywhere between 40-50 minutes long.</p>
 
-    
+<!-- HERO -->
+
+<section class="hero">
+
+    <h2>Information about me</h2>
+
+    <p>
+        My name is Vandna Thapar and I am a BACP Accredited mental-health
+        counsellor. Sessions are anywhere between 40-50 minutes long.
+    </p>
+
     <h3>Qualifications</h3>
-    <p>BACP Accredited Qualified Mental Health Counsellor.</p>
+
+    <p>
+        BACP Accredited Qualified Mental Health Counsellor.
+    </p>
 
     <h3>Areas of Specialisation</h3>
+
     <ul>
         <li>Stress Management</li>
         <li>Anxiety</li>
@@ -82,6 +318,7 @@
     </ul>
 
     <h3>What You Can Expect</h3>
+
     <p>
         Every counselling session provides a safe, confidential and supportive
         environment where you can discuss your thoughts and feelings without
@@ -89,6 +326,7 @@
     </p>
 
     <h3>Appointments Available</h3>
+
     <p>
         Face-to-face appointments<br>
         Online appointments<br>
@@ -96,84 +334,1005 @@
     </p>
 
     <h3>Confidentiality</h3>
-    <p>Your privacy is vital. All counselling sessions are confidential and handled professionally. The only exception for breaking confidentiality 
-	   is when the client reports self harm or harm to others that I will have to report it back to the safeguarding team. 
+
+    <p>
+        Your privacy is vital. All counselling sessions are confidential and
+        handled professionally. The only exception for breaking confidentiality
+        is when the client reports self harm or harm to others that I will have
+        to report it back to the safeguarding team.
     </p>
 
     <button>Book an Appointment</button>
+
     <button>Contact Me</button>
 
 </section>
 
+
 <!-- NEWS -->
+
 <section id="news" class="section">
+
     <h2>Helpful information</h2>
-	
-	<div class="cards">
-	    <div class="card">
-		    <h3>Services offered</h3>
-			<p>Stress</h3>
-			<p>Anxiety</h3>
-			<p>Relationships</h3>
-			<p>Self-awareness</h3>
-			<p>Addiction</h3>
-			<p>Bereavement</h3>
-			<p>Couples Therapy</h3>
-			<p>Work-related Stress</h3>
-	    </div>
-	</div>
-	
+
     <div class="cards">
+
         <div class="card">
-            <h3>What to do if suffering from addiction and signs of addiction</h3>
-	    </div>
+
+            <h3>Services offered</h3>
+
+            <p>Stress</p>
+            <p>Anxiety</p>
+            <p>Relationships</p>
+            <p>Self-awareness</p>
+            <p>Addiction</p>
+            <p>Bereavement</p>
+            <p>Couples Therapy</p>
+            <p>Work-related Stress</p>
+            <p>Neurodiversity</p>
+            <p>Trauma</p>
+
+        </div>
+
     </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>
+                What to do if suffering from addiction and signs of addiction
+            </h3>
+
+        </div>
+
+    </div>
+
 </section>
 
-<span style="color:blue"></span>
+
+<!-- CLICKABLE SERVICE LINKS -->
+
+<section class="service-links">
+
+    <h2>Our Services</h2>
+
+    <p>
+        Click on a service below to learn more about how counselling
+        may support you.
+    </p>
+
+    <ul>
+
+        <li>
+            <a href="#stress">Stress Management</a>
+        </li>
+
+        <li>
+            <a href="#anxiety">Anxiety</a>
+        </li>
+
+        <li>
+            <a href="#relationships">Relationships</a>
+        </li>
+
+        <li>
+            <a href="#self-awareness">Self-awareness</a>
+        </li>
+
+        <li>
+            <a href="#addiction">Addiction</a>
+        </li>
+
+        <li>
+            <a href="#bereavement">Bereavement</a>
+        </li>
+
+        <li>
+            <a href="#couples-therapy">Couples Therapy</a>
+        </li>
+
+        <li>
+            <a href="#work-related-stress">Work-related Stress</a>
+        </li>
+
+        <li>
+            <a href="#neurodiversity">Neurodiversity</a>
+        </li>
+
+        <li>
+            <a href="#trauma">Trauma</a>
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- SERVICE INFORMATION -->
+<!-- ====================================================== -->
+
+<section id="services" class="service-information">
+
+    <h2>Our Counselling Services</h2>
+
+    <p>
+        MapYourMind offers a confidential and supportive space to explore a
+        range of personal, emotional and relationship concerns. Below is an
+        overview of the different areas where counselling may provide support.
+    </p>
+
+    <div class="service-cards">
+
+        <!-- STRESS -->
+
+        <article id="stress" class="info-card">
+
+            <h2>Stress Management</h2>
+
+            <p>
+                Stress can affect your thoughts, emotions, relationships and
+                everyday life. Counselling can help you explore what is causing
+                stress and understand how it is affecting you.
+            </p>
+
+            <p>
+                Sessions can provide space to identify difficult situations,
+                recognise patterns and consider healthier ways of coping with
+                overwhelming feelings and pressures.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- ANXIETY -->
+
+        <article id="anxiety" class="info-card">
+
+            <h2>Anxiety</h2>
+
+            <p>
+                Anxiety may involve persistent worry, fear, nervousness or
+                feeling overwhelmed. Counselling provides a supportive,
+                non-judgemental environment in which you can talk about
+                these experiences.
+            </p>
+
+            <p>
+                You can explore thoughts and feelings that may be contributing
+                to anxiety and develop a greater understanding of your
+                experiences.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- RELATIONSHIPS -->
+
+        <article id="relationships" class="info-card">
+
+            <h2>Relationships</h2>
+
+            <p>
+                Relationships can sometimes become difficult because of
+                communication problems, changing circumstances, emotional
+                difficulties or disagreements.
+            </p>
+
+            <p>
+                Counselling can provide a confidential space to explore
+                communication, boundaries, emotions and relationship patterns,
+                helping you understand what you would like to change or improve.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- SELF AWARENESS -->
+
+        <article id="self-awareness" class="info-card">
+
+            <h2>Self-awareness</h2>
+
+            <p>
+                Self-awareness involves developing a clearer understanding
+                of your thoughts, feelings, behaviours and patterns of
+                interaction.
+            </p>
+
+            <p>
+                Counselling gives you time and space to reflect on your
+                experiences, understand yourself more clearly and consider
+                personal goals.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- ADDICTION -->
+
+        <article id="addiction" class="info-card">
+
+            <h2>Addiction</h2>
+
+            <p>
+                Addiction can affect emotional wellbeing, relationships,
+                work and everyday life. It can be difficult to talk about
+                these experiences, particularly when there are feelings of
+                shame or judgement.
+            </p>
+
+            <p>
+                Counselling provides a confidential and non-judgemental
+                space to explore experiences associated with addiction and
+                consider what support may be appropriate.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- BEREAVEMENT -->
+
+        <article id="bereavement" class="info-card">
+
+            <h2>Bereavement</h2>
+
+            <p>
+                Bereavement and grief can affect people in many different
+                ways. There is no single way to experience the loss of
+                someone important.
+            </p>
+
+            <p>
+                Counselling can provide a supportive space to talk about
+                loss, explore emotions and work through your experiences
+                at your own pace.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- COUPLES THERAPY -->
+
+        <article id="couples-therapy" class="info-card">
+
+            <h2>Couples Therapy</h2>
+
+            <p>
+                Couples therapy can provide partners with a structured and
+                supportive environment in which to explore relationship
+                concerns.
+            </p>
+
+            <p>
+                Sessions may provide space to discuss communication, conflict,
+                emotional difficulties, trust and other concerns affecting
+                the relationship.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- WORK RELATED STRESS -->
+
+        <article id="work-related-stress" class="info-card">
+
+            <h2>Work-related Stress</h2>
+
+            <p>
+                Workplace pressures can affect emotional wellbeing,
+                relationships, sleep, concentration and everyday life.
+            </p>
+
+            <p>
+                Counselling can provide a confidential space to explore
+                workplace stress, understand how it is affecting you and
+                reflect on ways of managing difficult experiences.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- NEURODIVERSITY -->
+
+        <article id="neurodiversity" class="info-card">
+
+            <h2>Neurodiversity</h2>
+
+            <p>
+                Neurodiversity describes the natural variation in how
+                people's brains work and how they experience the world.
+            </p>
+
+            <p>
+                Counselling can provide a supportive space to explore
+                personal experiences, emotional wellbeing, relationships
+                and challenges associated with neurodiversity.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+
+        <!-- TRAUMA -->
+
+        <article id="trauma" class="info-card">
+
+            <h2>Trauma</h2>
+
+            <p>
+                Difficult or traumatic experiences can have a lasting impact
+                on thoughts, feelings, relationships and everyday life.
+            </p>
+
+            <p>
+                Counselling can provide a confidential and supportive
+                environment where experiences can be explored at a pace
+                that feels appropriate for you.
+            </p>
+
+            <a href="#contact-us" class="contact-button">
+                Ask About Counselling
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- LIVE CHAT -->
+
 <section id="live-chat" class="section">
+
     <h2>Live Chat Support</h2>
 
     <div class="live-chat">
+
         <div class="chat-messages">
-            <p><strong>Support:</strong> Hello, how can we help you today?</p>
+
+            <p>
+                <strong>Support:</strong>
+                Hello, how can we help you today?
+            </p>
+
         </div>
 
-        <input type="text" placeholder="Type your message here...">
-        <button>Send</button>
+        <input
+            type="text"
+            placeholder="Type your message here..."
+        >
+
+        <button>
+            Send
+        </button>
+
     </div>
+
 </section>
 
-<!-- Testimonials-->
+
+<!-- TESTIMONIALS -->
+
 <section id="testimonials" class="section dark">
+
     <h2>Testimonials</h2>
 
     <div class="Testimonials">
+
         <div class="player">
-            <img src="assets/images/page_background.jpg">
+
+            <img
+                src="assets/images/page_background.jpg"
+                alt="Testimonials"
+            >
+
             <h3>Mason Mount</h3>
+
         </div>
+
     </div>
+
 </section>
 
-<!-- Contact Us-->
+
+<!-- CONTACT US -->
+
 <section id="contact-us" class="section">
+
     <h2>Contact Details</h2>
+
     <ul class="Contact Us Details">
-	    <li>You can contact us on:</li>
-        <li>Phone Number: 07488369349</li>
-        <li>Email Address: vt1374@gmail.com</li>
-		<li>You can also follow us on our social media page: <a href="https://www.instagram.com/mapyourmind.uk/" style="color:blue;">https://www.instagram.com/mapyourmind.uk/</a></li>
+
+        <li>
+            You can contact us on:
+        </li>
+
+        <li>
+            Phone Number: 07488369349
+        </li>
+
+        <li>
+            Email Address: vt1374@gmail.com
+        </li>
+
+        <li>
+            You can also follow us on our social media page:
+
+            <a
+                href="https://www.instagram.com/mapyourmind.uk/"
+                style="color:blue;"
+            >
+                Instagram
+            </a>
+
+        </li>
+
     </ul>
+
 </section>
+
+
+<!-- HOW COUNSELLING CAN HELP -->
+
+<section id="how-counselling-helps" class="extra-section">
+
+    <h2>How Counselling Can Help</h2>
+
+    <div class="info-card">
+
+        <h3>Understanding your thoughts and feelings</h3>
+
+        <p>
+            Counselling can provide a safe space to explore thoughts,
+            feelings and experiences that may feel difficult to manage alone.
+        </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h3>Managing stress and anxiety</h3>
+
+        <p>
+            Counselling may help you understand sources of stress and
+            develop ways of coping with difficult situations.
+        </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h3>Relationships</h3>
+
+        <p>
+            Counselling can provide an opportunity to explore communication,
+            boundaries and relationship difficulties.
+        </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h3>Personal development</h3>
+
+        <p>
+            Counselling can provide an opportunity to develop self-awareness,
+            reflect on experiences and work towards personal goals.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section id="how-it-works" class="extra-section">
+
+    <h2>How It Works</h2>
+
+    <div class="steps-container">
+
+        <div class="step-card">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>Get in Touch</h3>
+
+            <p>
+                Contact MapYourMind to discuss your requirements
+                and ask any questions you may have.
+            </p>
+
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>Arrange an Appointment</h3>
+
+            <p>
+                Discuss the available appointment options,
+                including face-to-face, online or telephone sessions.
+            </p>
+
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>Begin Your Journey</h3>
+
+            <p>
+                Begin counselling in a safe, confidential and
+                supportive environment.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AREAS OF SUPPORT -->
+
+<section id="areas-of-support" class="extra-section">
+
+    <h2>Areas of Support</h2>
+
+    <p>
+        MapYourMind provides counselling support across a range of
+        areas that may affect emotional wellbeing and everyday life.
+    </p>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq" class="extra-section">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="info-card">
+
+        <h3 class="faq-question">
+            How long is a counselling session?
+        </h3>
+
+        <div class="faq-answer">
+
+            <p>
+                Sessions are anywhere between 40-50 minutes long.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h3 class="faq-question">
+            Are counselling sessions confidential?
+        </h3>
+
+        <div class="faq-answer">
+
+            <p>
+                Counselling sessions are confidential and handled
+                professionally, subject to appropriate safeguarding
+                requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h3 class="faq-question">
+            Are online appointments available?
+        </h3>
+
+        <div class="faq-answer">
+
+            <p>
+                Yes. Online appointments are available.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h3 class="faq-question">
+            Are telephone appointments available?
+        </h3>
+
+        <div class="faq-answer">
+
+            <p>
+                Yes. Telephone appointments are available.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h3 class="faq-question">
+            What areas can counselling support?
+        </h3>
+
+        <div class="faq-answer">
+
+            <p>
+                MapYourMind offers support across areas including
+                stress management, anxiety, relationships,
+                self-awareness, addiction, bereavement, couples therapy,
+                work-related stress, neurodiversity and trauma.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EMERGENCY SUPPORT -->
+
+<section id="emergency-support" class="emergency-box">
+
+    <h2>Emergency Support</h2>
+
+    <p>
+        MapYourMind counselling is not an emergency or crisis service.
+    </p>
+
+    <p>
+        If you or somebody else is in immediate danger, contact
+        the emergency services by calling <strong>999</strong>.
+    </p>
+
+    <p>
+        If you require urgent mental-health support, please contact
+        an appropriate urgent mental-health or crisis service in
+        your area.
+    </p>
+
+</section>
+
+
+<!-- READY TO TALK -->
+
+<section id="ready-to-talk" class="extra-section">
+
+    <h2>Ready to Talk?</h2>
+
+    <p>
+        Taking the first step towards counselling can feel difficult.
+        If you would like to discuss an appointment, please get in touch.
+    </p>
+
+    <a href="#contact-us" class="contact-button">
+        Contact MapYourMind
+    </a>
+
+    <a href="tel:07488369349" class="contact-button">
+        Call 07488369349
+    </a>
+
+    <a href="mailto:vt1374@gmail.com" class="contact-button">
+        Send an Email
+    </a>
+
+</section>
+
+
+<!-- HELPFUL INFORMATION -->
+
+<section id="resources" class="extra-section">
+
+    <h2>Helpful Information</h2>
+
+    <p>
+        This section can be used to provide information about
+        mental health, wellbeing and different areas of counselling.
+    </p>
+
+    <ul class="resource-list">
+
+        <li>
+            Understanding stress and recognising when stress is becoming
+            difficult to manage.
+        </li>
+
+        <li>
+            Understanding anxiety and common experiences associated
+            with anxiety.
+        </li>
+
+        <li>
+            Understanding grief and the different ways people may
+            experience bereavement.
+        </li>
+
+        <li>
+            Understanding healthy relationships, communication and
+            personal boundaries.
+        </li>
+
+        <li>
+            Understanding the importance of self-awareness and
+            emotional wellbeing.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- PRIVACY -->
+
+<section id="privacy" class="extra-section">
+
+    <h2>Privacy Information</h2>
+
+    <p>
+        MapYourMind respects your privacy and aims to handle personal
+        information responsibly and professionally.
+    </p>
+
+    <p>
+        Please avoid sending highly sensitive personal information
+        through ordinary website messages or live chat unless you
+        have been specifically advised that the communication method
+        is appropriate.
+    </p>
+
+</section>
+
+
+<!-- QUICK LINKS -->
+
+<section id="quick-links" class="extra-section">
+
+    <h2>Quick Links</h2>
+
+    <p>
+        <a href="#" style="color:blue;">
+            Home
+        </a>
+    </p>
+
+    <p>
+        <a href="#services" style="color:blue;">
+            Our Services
+        </a>
+    </p>
+
+    <p>
+        <a href="#how-counselling-helps" style="color:blue;">
+            How Counselling Can Help
+        </a>
+    </p>
+
+    <p>
+        <a href="#how-it-works" style="color:blue;">
+            How It Works
+        </a>
+    </p>
+
+    <p>
+        <a href="#areas-of-support" style="color:blue;">
+            Areas of Support
+        </a>
+    </p>
+
+    <p>
+        <a href="#faq" style="color:blue;">
+            Frequently Asked Questions
+        </a>
+    </p>
+
+    <p>
+        <a href="#resources" style="color:blue;">
+            Helpful Information
+        </a>
+    </p>
+
+    <p>
+        <a href="#emergency-support" style="color:blue;">
+            Emergency Support
+        </a>
+    </p>
+
+    <p>
+        <a href="#contact-us" style="color:blue;">
+            Contact Us
+        </a>
+    </p>
+
+</section>
+
+
+<!-- BACK TO TOP -->
+
+<button
+    class="back-to-top"
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+>
+    Back to Top
+</button>
+
+
+<!-- LIVE CHAT FUNCTIONALITY -->
+
+<script>
+
+    const chatInput =
+        document.querySelector('.live-chat input');
+
+    const chatButton =
+        document.querySelector('.live-chat button');
+
+    const chatMessages =
+        document.querySelector('.chat-messages');
+
+
+    if (chatInput && chatButton && chatMessages) {
+
+        chatButton.addEventListener('click', function () {
+
+            const message =
+                chatInput.value.trim();
+
+            if (message !== '') {
+
+                const newMessage =
+                    document.createElement('p');
+
+                newMessage.textContent =
+                    'You: ' + message;
+
+                chatMessages.appendChild(
+                    newMessage
+                );
+
+                chatInput.value = '';
+
+                const response =
+                    document.createElement('p');
+
+                response.innerHTML =
+                    '<strong>Support:</strong> Thank you for your message. ' +
+                    'Please use the contact details on this website to arrange an appointment.';
+
+                chatMessages.appendChild(
+                    response
+                );
+
+            }
+
+        });
+
+
+        chatInput.addEventListener(
+            'keypress',
+            function(event) {
+
+                if (event.key === 'Enter') {
+
+                    chatButton.click();
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* SMOOTH SCROLLING */
+
+    document
+        .querySelectorAll('a[href^="#"]')
+        .forEach(function(link) {
+
+            link.addEventListener(
+                'click',
+                function(event) {
+
+                    const target =
+                        document.querySelector(
+                            this.getAttribute('href')
+                        );
+
+                    if (target) {
+
+                        event.preventDefault();
+
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+
+                    }
+
+                }
+            );
+
+        });
+
+</script>
+
 
 <footer>
-    <p>© 2026 MapYourMind</p>
+
+    <p>
+        © 2026 MapYourMind
+    </p>
+
 </footer>
 
-<script src="style.css"></script>
-
-<span style="color:blue"></span>
 
 </body>
 </html>
